@@ -40,7 +40,7 @@ main {
     align-items: center;
     padding: 20px;
     justify-items: center;
-    background: linear-gradient(#ff626267, #6b2cff5b);
+    background: linear-gradient(15deg, #ff626267, #6b2cff5b);
     font-size: 30px;
 }
 
