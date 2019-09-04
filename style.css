@@ -1,6 +1,6 @@
 main {
     max-width: 500px;
-    height: auto;
+    height: 0;
     font-family: 'Teko', sans-serif;
     color: #2c2c2cd3;
     margin: auto;
@@ -28,12 +28,13 @@ main {
     border: 1px solid gray;
     border-radius: 8px;
     padding: 5px;
+    outline: none;
 }
 
 #output {
     display: grid;
     grid-template-areas: 
-    "city1 temper"
+    "icon temper"
     "city humidity";
     border-radius: 8px;
     box-shadow: 0 20px 40px 0 silver;
@@ -45,7 +46,7 @@ main {
 }
 
 #img-div {
-    grid-area: city1;
+    grid-area: icon;
 }
 
 #city-name {

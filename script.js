@@ -36,7 +36,7 @@ function theResponse (response) {
 
 function httpRequestAsync(url, callback) {
     console.log("start req");
-    var httpRequest = new XMLHttpRequest();
+    let httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = () => { 
         if (httpRequest.readyState == 4 && httpRequest.status == 200)
             callback(httpRequest.responseText);
