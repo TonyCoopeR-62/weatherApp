@@ -44,26 +44,3 @@ function httpRequestAsync(url, callback) {
     httpRequest.open("GET", url, true); 
     httpRequest.send();
 }
-
-
-
-
-// document.getElementById('button').addEventListener('click', getWeather);
-// let icon = document.getElementById('icon');
-// let cityName = document.getElementById('cityName').innerHTML;
-// function getWeather() {
-    
-//     let searchText = document.getElementById('text').value;
-//     let apikey = "8a103589621e12d36e9ffd2d7ee39848";
-//     let link = `https://api.openweathermap.org/data/2.5/weather?q=${searchText}&appid=${apikey}`;
-//     fetch(link)
-//     .then(function(response) {
-//         return response.json();
-//     })
-//     .then(function(myJson) {
-//         let apiData = (JSON.stringify(myJson));
-//         cityName = apiData.name;
-//         //icon.src = "http://openweathermap.org/img/w/" + apiData.weather[0].icon + ".png";
-//     });
-// }
-
