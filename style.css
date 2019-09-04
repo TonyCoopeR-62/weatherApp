@@ -1,10 +1,71 @@
 main {
     max-width: 500px;
     height: auto;
+    font-family: 'Teko', sans-serif;
+    color: #2c2c2cd3;
+    margin: auto;
 }
 
 #input {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#button {
+    color: gray;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+#button:hover {
+    color: rgb(141, 56, 56);
+    padding: 10px;
+    transition: 0.3s;
+}
+
+#text {
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#output {
+    display: grid;
+    grid-template-areas: 
+    "city1 temper"
+    "city humidity";
+    border-radius: 8px;
+    box-shadow: 0 20px 40px 0 silver;
+    align-items: center;
+    padding: 20px;
+    justify-items: center;
+    background: linear-gradient(#ff626267, #6b2cff5b);
+    font-size: 30px;
+}
+
+#img-div {
+    grid-area: city1;
+}
+
+#city-name {
+    grid-area: city;
+}
+
+#temper {
+    grid-area: temper;
+}
+
+#humidity {
+    grid-area: humidity;
+}
+
+@media only screen and (max-width: 390px) {
+    #output {
+        font-size: 18px;
+        color: #000000;
+    }
+    #button {
+        font-size: 14px;
+    }
 }
